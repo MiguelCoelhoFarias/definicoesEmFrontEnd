@@ -1,0 +1,106 @@
+body {
+font-family: sans-serif;
+background-color: #ccc;
+}
+
+.bloco-imagem {
+
+    height: 500px;
+    background-image: url(assets/imagens/bg-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    padding-bottom: 10px;
+    /* 
+    COISAS NOVAS: 
+    BACKGROUND REPEAT: SE A IMAGEM VAI SE REPETIR OU NÃO
+    DUAS POSIÇÕES PODEM SER SELECIONADAS (OU MAIS)
+    TAMANHO PODE SER ADEQUADO DE ACORDO COM O TAMANHO DO ELEMENTO, USANDO O COVER
+    USANDO TAMANHO MAXIMO DE IMAGEM
+    */
+}
+.text {
+    text-align: center;
+    color: white;
+}
+.text h1{
+    text-transform: uppercase;
+    margin: 50px auto 0;
+    font-size: 50px;
+    text-shadow: 2px 0 black;
+    /* 
+    COISAS NOVAS:
+    USANDO SOMBRA NAS LETRAS COM O TEXT SHADOW ONDE SE COLOCA O VALOR SE É PRA ESQUERDA OU DIREITA, E A COR DA SOMBRA;
+    
+    */
+}
+.text p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-bottom: 2px solid;
+/* COISAS NOVAS: 
+    - TRANSPARENCIA SENDO UTILIZADA COM RGBA, ONDE A SIGNIFICA ALPHA;
+*/
+}
+
+.menu li{
+    list-style:none;
+    flex-direction: column;
+    display: inline-block;
+    border: 1px solid white;
+    margin-left: 16px;
+
+}
+.menu a {
+    background-color: rgba(0, 0, 0,0.3);
+    padding: 16px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.menu a:hover {
+    background-color: rgba(0, 0, 0,0.5);
+}
+
+.menu {
+    text-align: right;
+}
+
+.home h2 {
+    background-color: #aaa4a4;
+
+}
+.topics {
+    padding: 16px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.topics h2{
+    border-bottom:solid gray;
+    background-color: rgb(233, 233, 233);
+    text-transform: uppercase;
+    
+}
+.topics a {
+    background-color: #cdc7c3;
+    display: block;
+    padding: 12px 16px;
+    margin-left: auto;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+.rodape{
+    color: white;
+    background-color: #6b6c68;
+    text-align: center;
+    padding: 30px;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+}
